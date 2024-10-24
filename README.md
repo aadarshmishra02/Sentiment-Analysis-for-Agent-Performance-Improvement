@@ -27,6 +27,42 @@ To install the required dependencies, run:
 ```bash
 pip install transformers pydub speechrecognition torch
 ```
+## Skills Usage
+
+This project leverages a variety of technical and analytical skills, including:
+
+1. **Natural Language Processing (NLP)**:
+   - Utilized **Hugging Face's Transformers** to load a pre-trained BERT model for sentiment analysis of multilingual text from call transcriptions.
+   - Applied sentiment classification to categorize call sentiments into 5-star ratings, enabling real-time analysis of customer interactions.
+
+2. **Speech-to-Text Conversion**:
+   - Employed **Google Speech Recognition API** to transcribe audio data from real-time call recordings.
+   - Preprocessed and managed audio files with the **Pydub** library for seamless audio chunking and transcription.
+
+3. **Deep Learning**:
+   - Used **PyTorch** to execute the BERT-based sentiment analysis model, enabling efficient inference on transcribed text.
+   - Applied model fine-tuning techniques to ensure high accuracy in detecting sentiment during live calls.
+
+4. **Python Programming**:
+   - Developed real-time processing pipelines using Python for audio input, transcription, and sentiment classification.
+   - Implemented exception handling to manage issues like failed transcriptions due to poor audio quality.
+
+5. **Data Pipeline Design**:
+   - Built a real-time processing pipeline to handle audio chunking, speech recognition, and sentiment analysis in sequential steps.
+   - Designed the system to provide **actionable feedback** to customer service agents, helping them adjust their responses based on the real-time sentiment of the conversation.
+
+6. **Multilingual Support**:
+   - The BERT model used is **multilingual**, making the system capable of analyzing conversations in multiple languages, suitable for global customer service applications.
+
+7. **Real-time Feedback Generation**:
+   - Developed an adaptive feedback mechanism that provides real-time suggestions to agents based on the sentiment of customer interactions, helping them enhance service quality.
+   
+8. **Version Control & Collaboration**:
+   - Managed project development using **Git** and hosted the repository on **GitHub**, ensuring collaboration, version control, and seamless integration of code.
+   
+9. **API Integration**:
+   - Integrated third-party APIs like **Google Speech Recognition API** for converting speech to text, providing real-time transcription capabilities.
+
 ## Code Overview
 ### 1.Importing Libraries :
 The necessary libraries for processing audio, performing speech-to-text transcription, and running sentiment analysis are imported.
